@@ -36,10 +36,11 @@ def scrape(url):
 urls = ["a.com", "b.com", "c.com", "d.com"] # creacion de una lista de urls
 
 ### M A I N ###
-if __name__ == "__main__":  
-    # Empezamos el proceso de paralelizacion con 4 procesos
+if __name__ == '__main__':
+    # Creando un objeto Pool con 4 procesos
     pool = Pool(processes=4)
     # Mapeamos la funcion scrape con la lista de urls
+    # Empezamos el proceso de paralelizacion con 4 procesos
     data = pool.map(scrape, urls)
     # Cerramos el proceso
     pool.close()    
@@ -48,6 +49,7 @@ if __name__ == "__main__":
     print(Fore.YELLOW,"RESULTADOS:"+ Fore.WHITE)
     for row in data:
         print(row)
+
 
 end=time.time() # Paramos el contador de tiempo
 print("TIEMPO TOTAL: ",end-start) # Imprimimos por pantalla el tiempo total que ha tardado el programa
