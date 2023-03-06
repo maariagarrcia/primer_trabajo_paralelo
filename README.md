@@ -111,25 +111,13 @@ def secuenciall():
 
 ```
 
+
 # CONCLUSIONES
 Para demostrarlo hemos guardado 10 veces los tiempos de los dos programas en un csv y hemos comparado el tiempo haciendo una media de los 10 tiempos en paralelo y en secuencial.
 
-```
-TIEMPO EN PARALELO,TIEMPO EN SECUENCIAL
-"1.364","1.901"
-"1.471","2.898"
-"1.397","1.276"
-"1.648","2.685"
-"1.647","1.851"
-"1.372","2.221"
-"1.147","1.725"
-"1.64","3.444"
-"1.653","2.02"
-"1.309","1.793"
-MEDIAS
-"1,4648","2,1814"
-
-```
+<img width="1248" alt="Captura de pantalla 2023-03-06 a las 17 24 00" src="https://user-images.githubusercontent.com/93185415/223170011-b9c6022b-e191-49b3-8a18-5b1bb1692e51.png">
 
 
+
+Con esto demostramos que si está bien programado un programa en paralelo va a ser mas  rápido que en secuencial.
 
